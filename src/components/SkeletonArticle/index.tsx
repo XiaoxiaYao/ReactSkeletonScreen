@@ -18,7 +18,7 @@ const SkeletonArticle = (props: SkeletonArticleProps) => {
         <Skelenton type="text" theme={themeClass} />
         <Skelenton type="text" theme={themeClass} />
       </div>
-      <Shimmer theme="dark" />
+      <Shimmer theme={themeClass} />
     </div>
   );
 };
