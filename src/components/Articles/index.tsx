@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import SkeletonArticle from "../SkeletonArticle";
 
 interface Article {
   userId: string;
@@ -22,6 +23,7 @@ const Articles = () => {
   return (
     <div className="articles">
       <h2>Articles</h2>
+
       {articles &&
         articles.map(article => (
           <div className="article" key={article.id}>
@@ -29,7 +31,7 @@ const Articles = () => {
             <p>{article.body}</p>
           </div>
         ))}
-      {!articles && <div>Loading...</div>}
+      {!articles && [1, 2, 3, 4, 5].map(n => <SkeletonArticle key={n} />)}
     </div>
   );
 };
