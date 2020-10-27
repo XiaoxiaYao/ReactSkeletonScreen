@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SkeletonProfile from "../SkeletonProfile";
 
 interface Profile {
   username: string;
@@ -29,7 +30,7 @@ const User = () => {
           <a href={profile.website}>{profile.website}</a>
         </div>
       )}
-      {!profile && <div>Loading...</div>}
+      {!profile && <SkeletonProfile />}
     </div>
   );
 };
