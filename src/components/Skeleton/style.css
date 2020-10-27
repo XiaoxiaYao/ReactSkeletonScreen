@@ -1,5 +1,4 @@
 .skeleton {
-  background-color: #ddd;
   margin: 10px 0;
   border-radius: 4px;
 }
@@ -24,4 +23,12 @@
 .skeleton.thumbnail {
   width: 100px;
   height: 100px;
+}
+
+.light {
+  background-color: #ddd;
+}
+
+.dark {
+  background-color: #777;
 }

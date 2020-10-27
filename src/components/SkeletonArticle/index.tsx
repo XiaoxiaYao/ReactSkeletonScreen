@@ -2,15 +2,20 @@ import React from "react";
 import Skelenton from "../Skeleton";
 import "./style.css";
 
-const SkeletonArticle = () => {
+interface SkeletonArticleProps {
+  theme?: string;
+}
+
+const SkeletonArticle = (props: SkeletonArticleProps) => {
+  const themeClass = props.theme || "light";
   return (
-    <div className="skeleton-wrapper">
+    <div className={`skeleton-wrapper ${themeClass}`}>
       <div className="skeleton-article">
-        <Skelenton type="title" />
-        <Skelenton type="text" />
-        <Skelenton type="text" />
-        <Skelenton type="text" />
-        <Skelenton type="text" />
+        <Skelenton type="title" theme={themeClass} />
+        <Skelenton type="text" theme={themeClass} />
+        <Skelenton type="text" theme={themeClass} />
+        <Skelenton type="text" theme={themeClass} />
+        <Skelenton type="text" theme={themeClass} />
       </div>
     </div>
   );
