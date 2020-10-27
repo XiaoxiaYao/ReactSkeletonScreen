@@ -1,4 +1,5 @@
 import React from "react";
+import Shimmer from "../Shimmer";
 import Skelenton from "../Skeleton";
 import "./style.css";
 
@@ -17,6 +18,7 @@ const SkeletonArticle = (props: SkeletonArticleProps) => {
         <Skelenton type="text" theme={themeClass} />
         <Skelenton type="text" theme={themeClass} />
       </div>
+      <Shimmer theme="dark" />
     </div>
   );
 };
