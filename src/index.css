@@ -13,12 +13,12 @@ code {
 }
 
 header {
-  background-color: #1e65ff;
+  background-color: #61dafb;
   padding: 10px;
 }
 
 header h1 {
-  color: white;
+  color: #333333;
   max-width: 1200px;
   margin: 0 auto;
 }
